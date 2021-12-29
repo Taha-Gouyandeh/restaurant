@@ -1,0 +1,192 @@
+.hamburger-menu{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    margin: 5% 5% 0 0;
+    z-index: 500;
+    
+    .menu{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        transition: transform 1s;
+
+
+        .menu-line{
+            width: 100%;
+            height: 4px;
+            background-color: $color-primary;
+            transition: all 0.5s 0.5s;
+            transform-origin: right
+            
+            
+        }
+
+        
+    }
+}
+
+.logo{
+    @include flexLayout;
+    font-size: 70px;
+    color: $color-primary;
+    width: 110px;
+    height: 110px;
+    border: 3px solid $color-primary;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    order: 1;
+}
+
+.main-name{
+    font-family: $font-sahel;
+    font-size: 50px;
+    color: $color-secondary;
+    @include textStyle;
+}
+
+.sub-name{
+    font-family:  $font-sahel;
+    font-size: 18px;
+    color: $color-secondary;
+    text-align: center;
+    @include textStyle;
+}
+
+.main-heading{
+    font-family: $font-nastaliq;
+    font-size: 90px;
+    font-weight: 300;
+    color: $color-primary;
+    margin-bottom: 40px;
+}
+
+.sub-heading{
+    font-family: $font-sahel;
+    font-size: 50px;
+    font-weight: 200;
+    color: $color-secondary;
+    margin-bottom: 40px;
+}
+
+.main-btn{
+    width: 170px;
+    height: 45px;
+    font-family: $font-sahel;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 8px;
+    color: $color-primary;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+}
+
+.card{
+    width: 32%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .card-overlay{
+      margin: 16px;
+      order: 1;
+
+    }
+
+    .card-img{
+      width: 100%;
+      border-radius:16px 16px 0 0;
+    }
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 48%;
+    }
+}
+
+
+#hover-div1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),url("../images/gallery-img-1.jpeg")  ;
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    
+    p{
+        color: white;
+    }
+    
+}
+#hover-div2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),url("../images/gallery-img-2.jpeg")  ;
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    
+    p{
+        color: white;
+    }
+    
+}
+
+.total-name{
+    padding-top: 24px;
+    font-size: 32px; 
+}
+.total-name1{
+    
+    font-size: 32px; 
+}
+
+.total-enter{
+    margin-top: 16px;
+    font-size: 24px; 
+}
+.total-price{
+    font-size: 24px; 
+}
+.card-overlay-btn{
+    width: 50%;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.589);
+    color: white;
+    border-radius: 16px;
+    border: 1px solid black;
+    margin-top: 16px;
+    cursor:pointer
+}
+.card-overlay-paragraph{
+    font-size: 14px;
+}
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>sass project</title>
+  </head>
+  <body>
+    <!--start navbar-->
+    <nav class="navbar">
+      <input type="checkbox" class="checkbox" id="checkbox" hidden />
+      <div class="hamburger-menu">
+        <label for="checkbox" class="menu">
+          <div class="menu-line menu-line-1"></div>
+          <div class="menu-line menu-line-2"></div>
+          <div class="menu-line menu-line-3"></div>
+        </label>
+      </div>
+
+      <div class="navbar-navigation">
+
+        <div class="navbar-navigation-right">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">خانه</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">دربااره ما</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">گالری تصاویر</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">رزرو میز</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">سرویس ها</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-navigation-left">
+            <img src="./images/nav-img-1.jpeg" class="left-img left-img-1" />
+            <img src="./images/nav-img-2.jpeg" class="left-img left-img-2" />
+            <img src="./images/nav-img-3.jpeg" class="left-img left-img-3" />
+          </div>
+      </div>
+    </nav>
+
+    <!--end navbar-->
+
+    <!-- start site header -->
+    <header class="header">
+      <div class="brand">
+        <a href="#" class="logo">
+          <i class="fa fa-utensils"></i>
+        </a>
+        <div>
+          <h1 class="main-name">رستوران من</h1>
+          <p class="sub-name">غذاهای لذیذ ما</p>
+        </div>
+      </div>
+      <div class="header-banner">
+        <h1 class="main-heading">خوش آمدید</h1>
+        <h3 class="sub-heading">غذاهای مارا امتحان کنین</h3>
+        <button type="button" class="main-btn">رزرو میز</button>
+      </div>
+    </header>
+
+    <!-- end site header -->
+    <!--start about us section-->
+    <section class="about-us">
+      <div class="about-us-right">
+        <h1 class="main-heading">درباره رستوران</h1>
+        <h3 class="sub-heading">درباره دست پخت ما</h3>
+        <div class="stars">
+          <i class="fa fa-star-of-life"></i>
+          <i class="fa fa-star-of-life"></i>
+          <i class="fa fa-star-of-life"></i>
+        </div>
+        <p class="description">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+          طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+          الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+          صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+          شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+          اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+          قرار گیرد.
+        </p>
+        <div class="stars">
+          <i class="fa fa-star-of-life"></i>
+          <i class="fa fa-star-of-life"></i>
+          <i class="fa fa-star-of-life"></i>
+        </div>
+
+        <button type="button" class="main-btn">اطلاعات بیشتر</button>
+      </div>
+      <div class="about-us-left">
+        <img src="images/about-us-img.png" alt="درباره ما" />
+      </div>
+    </section>
+
+    <!--end about us section-->
+
+    <!--start gallery section-->
+    <section class="gallery">
+      <div class="cards-wrapper">
+        <div class="card" id="card">
+          <div class="card-overlay">
+            <h2 class="card-overlay-heading">رولت گوشت</h2>
+            <p class="card-overlay-paragraph">قیمت : 50,000 تومان</p>
+          </div>
+          <img src="images/gallery-img-1.jpeg" class="card-img" />
+        </div>
+
+        <div class="card" id="card2">
+          <div class="card-overlay">
+            <h2 class="card-overlay-heading">پنه</h2>
+            <p class="card-overlay-paragraph">قیمت : 45,000 تومان</p>
+          </div>
+          <img src="images/gallery-img-2.jpeg" class="card-img" />
+        </div>
+
+        <div class="card">
+          <div class="card-overlay">
+            <h2 class="card-overlay-heading">پیتزا سبزیجات</h2>
+            <p class="card-overlay-paragraph">قیمت : 50,000 تومان</p>
+          </div>
+          <img src="images/gallery-img-3.jpeg" class="card-img" />
+        </div>
+
+        <div class="card">
+          <div class="card-overlay">
+            <h2 class="card-overlay-heading">ماهی غرل آلا</h2>
+            <p class="card-overlay-paragraph">قیمت : 50,000 تومان</p>
+          </div>
+          <img src="images/gallery-img-4.jpeg" class="card-img" />
+        </div>
+
+        <div class="card">
+          <div class="card-overlay">
+            <h2 class="card-overlay-heading">نیمرو</h2>
+            <p class="card-overlay-paragraph">قیمت : 50,000 تومان</p>
+          </div>
+          <img src="images/gallery-img-5.jpeg" class="card-img" />
+        </div>
+
+        <div class="card">
+          <div class="card-overlay">
+            <h2 class="card-overlay-heading">استیک</h2>
+            <p class="card-overlay-paragraph">قیمت : 50,000 تومان</p>
+          </div>
+          <img src="images/gallery-img-6.jpeg" class="card-img" />
+        </div>
+      </div>
+    </section>
+
+    <!--end gallery section-->
+
+    <!-- start footer section -->
+    <footer class="footer">
+      <div class="footer-header">
+        <a href="#" class="logo">
+          <i class="fa fa-utensils"></i>
+        </a>
+        <div>
+          <h1 class="main-name">رستوران من</h1>
+          <p class="sub-name">غذاهای لذیذ ما</p>
+        </div>
+      </div>
+      <div class="footer-social-media">
+        <ul class="social-media">
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-google-plus-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">
+          &copy; کپی رایت. تمام حقوق این سایت متعلق به من میباشد
+        </p>
+      </div>
+    </footer>
+    <!-- end footer section -->
+
+    <script src="./js/card.js"></script>
+  </body>
+</html>
